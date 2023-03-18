@@ -1,7 +1,7 @@
 from abc import ABC
 from engine.engine import Engine
 
-from engine.car import Car
+from car import Car
 
 
 class CapuletEngine(Engine, ABC):
