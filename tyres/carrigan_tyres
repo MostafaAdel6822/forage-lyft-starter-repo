@@ -1,0 +1,11 @@
+from abc import ABC
+from tyres.tyres import Tyres
+class CarriganTyres(Tyres,ABC):
+    def __init__(self,readings):
+        self.readings=readings
+    def needs_service(self):
+        flag = False
+        for i in self.readings:
+            if self.readings[i]>=0.9:
+                flag=True
+        return flag
